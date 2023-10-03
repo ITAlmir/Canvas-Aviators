@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Set the flex container to column layout */
+    justify-content: flex-start; /* Align content to the top of the viewport */
+    overflow: hidden;
+    height: 100vh;
+}
+
+#bg {  
+    /*cursor: none;*/
+    background-color: rgb(300, 300, 300);
+    background: #111 url(images/classy_fabric.jpg);
+    background-size: auto 100%;
+    height: 80%; /* 80% of the viewport height */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#barrel-img {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+}
+#base-img{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+/*#airplane-canvas{
+    width: 120px;
+    height: 30px;
+}*/
+
+#radar {
+    background: linear-gradient(#333, #111);
+    box-shadow:
+        0 0 0 1px hsla(0, 0%, 0%, 0.5),
+        inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+    padding: 14px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 75%; /* Set left to 50% */
+    top: 95%; /* Set top to 50% */
+    transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%; /* 20% of the viewport height */
+    width: 100%;
+    background-color: #333; /* Dark background color */
+    padding: 0; /* Optional padding */
+    margin-top: auto; /* Push the container to the bottom */
+}
+
+.container > div {
+    height: 200px;
+    height: 100%; /* Take up full height of the container */
+    border: 2px solid red; /* Red stroke */
+    margin: 0;
+}
+
+.left, .right {
+    display: flex;
+    width: 20%; /* 20% width for the first and last div */
+    background-color: rgb(42, 33, 33); /* Dark background color */
+    margin: 0;
+    padding: auto;
+    position: relative;
+}
+
+.middle {
+    width: 60%; /* 60% width for the middle div */
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#movement-display {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+canvas{
+    margin: 0;
+    padding: 0;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Set the text color to white */
+#scores {
+    color: rgb(114, 136, 207);
+    font-size: 2.5em;
+    text-align: center;
+}
+#rocket-loads {
+    color: rgb(193, 197, 130);
+    font-size: 3em;
+    text-align: center;
+}
+#game-level {
+    color: rgb(235, 120, 120);
+    font-size: 2em;
+    text-align: center;
+}
+hr{
+    width: 20vw;
+    background: darkgreen;
+    border: none; 
+    height: 2px;
+}

@@ -1,0 +1,5 @@
+ ** to instal real-time server on npm 
+ npm install -g http-server
+
+ **to start server
+ http-server 

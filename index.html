@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="bg">
+            <canvas id="canvas"></canvas>
+            <canvas id="airplane-canvas"></canvas>
+            <img id="barrel-img" src="images/rocket3-removebg-preview.png" style="display: none;" alt="Transparent Image">
+            <img id="base-img" src="images/turret3.png" style="display: none;" alt="Turret Base">
+        </div>
+        <div class="left">
+            <div id="game-level">Level: 1</div>
+            <hr>
+            <div id="rocket-loads">Rockets: 3</div>
+            <hr>
+            <div id="scores">Scores: 0</div>
+        </div>
+        <div class="middle">
+            <canvas id="movement-display"></canvas>
+        </div>
+        <div class="right">
+            <div id="radar"></div>
+        </div>
+    </div>   
+    <script src="canvas.js"></script>
+    <script src="waves.js"></script>
+    <script src="sketch.min.js"></script>
+    <script src="script.js"></script>
+    <script src="drawElements.js"></script>
+
+</body>
+</html>
