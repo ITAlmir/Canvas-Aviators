@@ -51,7 +51,7 @@ let airx = bgCanvas.width + airplaneImage.width; // Use airplaneImage.width
 let airy = Math.random() * (maxHeight - minHeight) + minHeight;
 let airRandomDelay = Math.floor(Math.random() * 20000) + 1000;
 // Define the speed of the airplane (pixels per frame)
-let airSpeed = 7;
+let airSpeed = 1;
 // ... (Previous code)
 let missleSpeed = 10;
 
